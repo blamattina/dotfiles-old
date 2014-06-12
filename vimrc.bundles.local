@@ -1,0 +1,6 @@
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'itchyny/lightline.vim'
+Bundle 'rking/ag.vim'
+Bundle 'nono/vim-handlebars'
+Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'csexton/jekyll.vim'
