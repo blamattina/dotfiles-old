@@ -3,3 +3,6 @@
 
 # macvim
 export PATH="/usr/local/bin:$PATH"
+
+# tmuxifier
+export PATH="$HOME/.tmuxifier/bin:$PATH"
