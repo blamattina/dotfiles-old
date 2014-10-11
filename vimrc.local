@@ -1,5 +1,5 @@
 set colorcolumn=80
-highlight ColorColumn ctermbg=white guibg=white
+highlight ColorColumn ctermbg=255 guibg=#ECECEC
 
 " Numbers
 set number
@@ -31,6 +31,12 @@ augroup vimrcEx
   autocmd BufRead,BufNewFile *.py,*.js,*.html setlocal shiftwidth=4
 
 augroup END
+
+" Indent Guides http://vimawesome.com/plugin/indent-guides
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#ECECEC ctermbg=255
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=#FFFFFF ctermbg=231
+autocmd BufRead,BufNewFile * :IndentGuidesEnable
 
 " Jekyll Blog
 let g:jekyll_path = "/Users/brian/projects/blamattina.github.io"
