@@ -1,0 +1,3 @@
+alias gco='git checkout'
+alias gfa='git fetch --all'
+alias grom='git reset origin/master'

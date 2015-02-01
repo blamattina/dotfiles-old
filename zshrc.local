@@ -6,3 +6,11 @@ export PATH="/usr/local/bin:$PATH"
 
 # tmuxifier
 export PATH="$HOME/.tmuxifier/bin:$PATH"
+
+# psql
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
+
+# python
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
