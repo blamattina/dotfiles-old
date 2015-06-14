@@ -1,4 +1,5 @@
 set colorcolumn=80
+colorscheme github
 highlight ColorColumn ctermbg=255 guibg=#ECECEC
 
 " Numbers
