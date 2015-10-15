@@ -1,5 +1,6 @@
 [alias]
   l = log --pretty=colored
+  cob = "!f() { git checkout -b $1 origin/$1; }; f"
 [pretty]
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [user]
