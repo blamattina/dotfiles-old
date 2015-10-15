@@ -34,8 +34,8 @@ augroup vimrcEx
   autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
   " Set tabs to 4 spaces for some file extensions
-  autocmd BufRead,BufNewFile *.py,*.js,*.html setlocal tabstop=4
-  autocmd BufRead,BufNewFile *.py,*.js,*.html setlocal shiftwidth=4
+  autocmd BufRead,BufNewFile *.py,*.html setlocal tabstop=4
+  autocmd BufRead,BufNewFile *.py,*.html setlocal shiftwidth=4
 
 augroup END
 
