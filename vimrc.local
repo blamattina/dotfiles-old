@@ -2,6 +2,9 @@ set colorcolumn=80
 colorscheme github
 highlight ColorColumn ctermbg=255 guibg=#ECECEC
 
+" Markdown syntax highlighting
+let g:markdown_fenced_languages = [ 'coffee', 'javascript', 'js=javascript', 'json' ]
+
 " Numbers
 set number
 set numberwidth=5
@@ -26,6 +29,9 @@ augroup vimrcEx
 
   " Strip trailing whitespace
   autocmd BufWritePre * :call Preserve("%s/\\s\\+$//e")
+
+  " Markdown
+  autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
   " Set tabs to 4 spaces for some file extensions
   autocmd BufRead,BufNewFile *.py,*.js,*.html setlocal tabstop=4
