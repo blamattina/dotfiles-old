@@ -1,3 +1,18 @@
+git_commit_sha() {
+  current_sha=$(git rev-parse --short HEAD 2> /dev/null)
+  if [[ -n $current_sha ]]; then
+    echo " %{$fg_bold[green]%}$current_sha%{$reset_color%}"
+  fi
+}
+
+random_emoji() {
+  EMOJI=(💸 🌵 ⚡️ 🍐 🐮 🐄 🍕 🐝 )
+  echo "$EMOJI[$RANDOM%$#EMOJI+1]"
+}
+
+export PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%}$(git_prompt_info) $(random_emoji)  '
+export RPROMPT='$(git_commit_sha)'
+
 # brew
 export PATH="/opt/boxen/homebrew/bin:$PATH"
 export PATH="/opt/boxen/homebrew/sbin:$PATH"
