@@ -16,9 +16,6 @@ eval "$(rbenv init -)"
 # z
 . `brew --prefix`/etc/profile.d/z.sh
 
-# macvim
-export PATH="/usr/local/bin:$PATH"
-
 # tmuxifier
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 
